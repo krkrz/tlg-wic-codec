@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="dds-wic-codec"
-	ProjectGUID="{22B3FA09-48BE-4BB0-A61C-92E328076A7D}"
-	RootNamespace="dds-wic-codec"
+	Name="tlg-wic-codec"
+	ProjectGUID="{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}"
+	RootNamespace="tlg-wic-codec"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -66,7 +66,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="windowscodecs.lib"
 				LinkIncremental="2"
-				ModuleDefinitionFile="dds-wic-codec.def"
+				ModuleDefinitionFile="tlg-wic-codec.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -120,7 +120,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="squish"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;DDSCODEC_EXPORTS;SQUISH_USE_SSE=2"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;tlgCODEC_EXPORTS;SQUISH_USE_SSE=2"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -141,7 +141,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="windowscodecs.lib"
 				LinkIncremental="2"
-				ModuleDefinitionFile="dds-wic-codec.def"
+				ModuleDefinitionFile="tlg-wic-codec.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="17"
@@ -199,7 +199,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				AdditionalIncludeDirectories="squish"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;DDSCODEC_EXPORTS;SQUISH_USE_SSE=2"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;tlgCODEC_EXPORTS;SQUISH_USE_SSE=2"
 				RuntimeLibrary="0"
 				BufferSecurityCheck="false"
 				EnableFunctionLevelLinking="true"
@@ -222,7 +222,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="windowscodecs.lib"
 				LinkIncremental="1"
-				ModuleDefinitionFile="dds-wic-codec.def"
+				ModuleDefinitionFile="tlg-wic-codec.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -305,7 +305,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="windowscodecs.lib"
 				LinkIncremental="1"
-				ModuleDefinitionFile="dds-wic-codec.def"
+				ModuleDefinitionFile="tlg-wic-codec.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -368,191 +368,23 @@
 			</File>
 		</Filter>
 		<Filter
-			Name="ddsx"
+			Name="tlgx"
 			>
 			<File
-				RelativePath=".\ddsx\ddsdecoder.cpp"
+				RelativePath=".\tlgx\tlgdecoder.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ddsx\ddsdecoder.hpp"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="squish"
-			>
-			<File
-				RelativePath=".\squish\alpha.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\alpha.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\clusterfit.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\clusterfit.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourblock.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourblock.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourfit.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourfit.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourset.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\colourset.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\config.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\maths.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\maths.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\rangefit.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\rangefit.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\simd.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\simd_float.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\simd_sse.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\simd_ve.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\singlecolourfit.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\singlecolourfit.h"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\singlecolourlookup.inl"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\squish.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\squish\squish.h"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="pvrlib"
-			>
-			<File
-				RelativePath=".\pvrlib\PVRTDecompress.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTDecompress.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTFixedPoint.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTFixedPoint.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTGlobal.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMathTable.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMatrix.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMatrixF.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMatrixX.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMisc.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTMisc.h"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTTexture.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrlib\PVRTTexture.h"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="pvrx"
-			>
-			<File
-				RelativePath=".\pvrx\pvrdecoder.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\pvrx\pvrdecoder.hpp"
+				RelativePath=".\tlgx\tlgdecoder.hpp"
 				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\dds-wic-codec.cpp"
+			RelativePath=".\tlg-wic-codec.cpp"
 			>
 		</File>
 		<File
-			RelativePath=".\dds-wic-codec.def"
+			RelativePath=".\tlg-wic-codec.def"
 			>
 		</File>
 		<File

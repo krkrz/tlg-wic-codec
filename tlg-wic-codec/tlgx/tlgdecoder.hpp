@@ -4,38 +4,38 @@
 #include "../wicx/basedecoder.hpp"
 #include "../wicx/regman.hpp"
 
-extern const GUID CLSID_DDS_Container;
-extern const GUID CLSID_DDS_Decoder;
+extern const GUID CLSID_TLG_Container;
+extern const GUID CLSID_TLG_Decoder;
 
-namespace dds
+namespace tlg
 {
-	struct DDS_HEADER;
+	struct TLG_HEADER;
 }
 
-namespace ddsx
+namespace tlgx
 {
 	using namespace wicx;
 
-	class DDS_FrameDecode: public BaseFrameDecode
+	class TLG_FrameDecode: public BaseFrameDecode
 	{
 	public:
-		DDS_FrameDecode( IWICImagingFactory *pIFactory, UINT num );
+		TLG_FrameDecode( IWICImagingFactory *pIFactory, UINT num );
 
-		HRESULT Load_DXT_Image( dds::DDS_HEADER &ddsHeader, IStream *pIStream );
-		HRESULT LoadLinearImage( dds::DDS_HEADER &ddsHeader, IStream *pIStream );
+		HRESULT Load_DXT_Image( tlg::TLG_HEADER &tlgHeader, IStream *pIStream );
+		HRESULT LoadLinearImage( tlg::TLG_HEADER &tlgHeader, IStream *pIStream );
 
 	private:
 		HRESULT FillBitmapSource( UINT width, UINT height, UINT dpiX, UINT dpiY, REFWICPixelFormatGUID pixelFormat,
 			UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer );
 	};
 
-	class DDS_Decoder: public BaseDecoder
+	class TLG_Decoder: public BaseDecoder
 	{
 	public:
 		static void Register( RegMan &regMan );
 
-		DDS_Decoder();
-		~DDS_Decoder();
+		TLG_Decoder();
+		~TLG_Decoder();
 
 		// IWICBitmapDecoder interface
 
@@ -48,6 +48,6 @@ namespace ddsx
 			/* [in] */ WICDecodeOptions cacheOptions );
 
 	protected:
-		virtual DDS_FrameDecode* CreateNewDecoderFrame( IWICImagingFactory *factory , UINT i );
+		virtual TLG_FrameDecode* CreateNewDecoderFrame( IWICImagingFactory *factory , UINT i );
 	};
 }
