@@ -140,7 +140,7 @@ namespace tlgx
 			if ( SUCCEEDED( result ))
 				result = CoCreateInstance( CLSID_WICImagingFactory, NULL, CLSCTX_INPROC_SERVER, IID_IWICImagingFactory, reinterpret_cast<LPVOID *>( &codecFactory ));
 			if ( SUCCEEDED( result ))
-				result = codecFactory->CreateBitmapFromMemory ( width, height, GUID_WICPixelFormat32bpp3ChannelsAlpha, pitch, pitch * height,
+				result = codecFactory->CreateBitmapFromMemory ( width, height, GUID_WICPixelFormat32bppBGRA, pitch, pitch * height,
 																												outData, reinterpret_cast<IWICBitmap **>( &( m_bitmapSource )));
 			if ( codecFactory ) codecFactory->Release();
 			return result;
