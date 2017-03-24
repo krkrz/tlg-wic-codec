@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{ae5e0495-64da-492b-9f13-6d2e4759f061}") = "tlg-wic-codec", "tlg-wic-codec\tlg-wic-codec.vcproj", "{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tlg-wic-codec", "tlg-wic-codec\tlg-wic-codec.vcxproj", "{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Debug|Win32.ActiveCfg = Debug|Win32
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Debug|Win32.Build.0 = Debug|Win32
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Debug|x64.ActiveCfg = Debug|x64
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Debug|x64.Build.0 = Debug|x64
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Release|Win32.ActiveCfg = Release|Win32
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Release|Win32.Build.0 = Release|Win32
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Release|x64.ActiveCfg = Release|x64
-		{b4dafb2b-2227-4688-ae0d-c4090c6c46f8}.Release|x64.Build.0 = Release|x64
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Debug|Win32.ActiveCfg = Release|Win32
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Debug|Win32.Build.0 = Release|Win32
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Debug|x64.ActiveCfg = Release|x64
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Debug|x64.Build.0 = Release|x64
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Release|Win32.ActiveCfg = Release|Win32
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Release|Win32.Build.0 = Release|Win32
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Release|x64.ActiveCfg = Release|x64
+		{B4DAFB2B-2227-4688-AE0D-C4090C6C46F8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+Debug
+Debug-Win32
+*.ncb
+*.suo
+*.user
+Release
+Release-Win32
+.vs

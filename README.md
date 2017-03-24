@@ -14,9 +14,8 @@ dds-wic-codec at googlecode: http://code.google.com/p/dds-wic-codec
 
 > regsvr32 dds-wic-codec.dll 
 
-(3) サムネール用の当労苦を追加します
+(3) サムネール用の登録も追加します
 
 > reg import thumbnail.reg
-
 
 

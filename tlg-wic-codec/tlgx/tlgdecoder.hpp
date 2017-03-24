@@ -16,19 +16,6 @@ namespace tlgx
 {
 	using namespace wicx;
 
-	class TLG_FrameDecode: public BaseFrameDecode
-	{
-	public:
-		TLG_FrameDecode( IWICImagingFactory *pIFactory, UINT num );
-
-		HRESULT Load_DXT_Image( tlg::TLG_HEADER &tlgHeader, IStream *pIStream );
-		HRESULT LoadLinearImage( tlg::TLG_HEADER &tlgHeader, IStream *pIStream );
-
-	private:
-		HRESULT FillBitmapSource( UINT width, UINT height, UINT dpiX, UINT dpiY, REFWICPixelFormatGUID pixelFormat,
-			UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer );
-	};
-
 	class TLG_Decoder: public BaseDecoder
 	{
 	public:
@@ -48,6 +35,6 @@ namespace tlgx
 			/* [in] */ WICDecodeOptions cacheOptions );
 
 	protected:
-		virtual TLG_FrameDecode* CreateNewDecoderFrame( IWICImagingFactory *factory , UINT i );
+		virtual BaseFrameDecode* CreateNewDecoderFrame( IWICImagingFactory *factory , UINT i );
 	};
 }

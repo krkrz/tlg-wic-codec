@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="wicx">
+      <UniqueIdentifier>{bee58d52-00fd-4e16-b16d-5a3d503bbb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tlgx">
+      <UniqueIdentifier>{4f1de49c-24d4-4e6c-b407-123285572583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libtlg">
+      <UniqueIdentifier>{0b575d2f-eaae-4863-b0ec-d0ea7af5d4c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wicx\basedecoder.cpp">
+      <Filter>wicx</Filter>
+    </ClCompile>
+    <ClCompile Include="wicx\regman.cpp">
+      <Filter>wicx</Filter>
+    </ClCompile>
+    <ClCompile Include="tlgx\tlgdecoder.cpp">
+      <Filter>tlgx</Filter>
+    </ClCompile>
+    <ClCompile Include="libtlg\LoadTLG.cpp">
+      <Filter>libtlg</Filter>
+    </ClCompile>
+    <ClCompile Include="libtlg\slide.cpp">
+      <Filter>libtlg</Filter>
+    </ClCompile>
+    <ClCompile Include="libtlg\stream.cpp">
+      <Filter>libtlg</Filter>
+    </ClCompile>
+    <ClCompile Include="libtlg\tvpgl.c">
+      <Filter>libtlg</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tlg-wic-codec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wicx\basedecoder.hpp">
+      <Filter>wicx</Filter>
+    </ClInclude>
+    <ClInclude Include="wicx\classfactory.hpp">
+      <Filter>wicx</Filter>
+    </ClInclude>
+    <ClInclude Include="wicx\regman.hpp">
+      <Filter>wicx</Filter>
+    </ClInclude>
+    <ClInclude Include="wicx\unknownimpl.hpp">
+      <Filter>wicx</Filter>
+    </ClInclude>
+    <ClInclude Include="tlgx\tlgdecoder.hpp">
+      <Filter>tlgx</Filter>
+    </ClInclude>
+    <ClInclude Include="libtlg\slide.h">
+      <Filter>libtlg</Filter>
+    </ClInclude>
+    <ClInclude Include="libtlg\stream.h">
+      <Filter>libtlg</Filter>
+    </ClInclude>
+    <ClInclude Include="libtlg\tjs.h">
+      <Filter>libtlg</Filter>
+    </ClInclude>
+    <ClInclude Include="libtlg\TLG.h">
+      <Filter>libtlg</Filter>
+    </ClInclude>
+    <ClInclude Include="libtlg\tvpgl.h">
+      <Filter>libtlg</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tlg-wic-codec.def" />
+  </ItemGroup>
+</Project>
