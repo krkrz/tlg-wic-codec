@@ -20,10 +20,10 @@ libtlg/ は吉里吉里に由来します
 (2) コマンドプロンプト（開発者）から以下で登録できます
 
 32bit版
-> regsvr32 Release-Win32\dds-wic-codec.dll 
+> regsvr32 Release-Win32\tlg-wic-codec.dll 
 
 64bit版
-> regsvr32 Release-x64\dds-wic-codec.dll 
+> regsvr32 Release-x64\tlg-wic-codec.dll 
 
 (3) サムネール用の登録を追加するとエクスプローラのサムネール表示とプレビュー表示に対応します
 
@@ -36,8 +36,8 @@ libtlg/ は吉里吉里に由来します
 (2) コマンドプロンプト（開発者）から以下で削除できます
 
 32bit版
-> regsvr32 /u Release-Win32\dds-wic-codec.dll 
+> regsvr32 /u Release-Win32\tlg-wic-codec.dll 
 
 64bit版
-> regsvr32 /u Release-x64\dds-wic-codec.dll 
+> regsvr32 /u Release-x64\tlg-wic-codec.dll 
 
