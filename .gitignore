@@ -1,8 +1,10 @@
 Debug
 Debug-Win32
+Debug-x64
+Release
+Release-Win32
+Release-x64
 *.ncb
 *.suo
 *.user
-Release
-Release-Win32
 .vs
