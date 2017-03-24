@@ -8,3 +8,4 @@ Release-x64
 *.suo
 *.user
 .vs
+*.zip
