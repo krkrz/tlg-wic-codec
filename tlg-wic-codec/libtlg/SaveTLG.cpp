@@ -7,16 +7,16 @@ extern int SaveTLG6(tTJSBinaryStream *out, int width, int height, int colors, vo
 //---------------------------------------------------------------------------
 
 /**
- * TLG‰æ‘œ‚ÌƒZ[ƒu
- * @param dest Ši”[æƒXƒgƒŠ[ƒ€
- * @param type Ží•Ê 0:TLG5 1:TLG6
- * @parma width ‰æ‘œ‰¡•
- * @param height ‰æ‘œc•
- * @param colors F”Žw’è 1:8bitƒOƒŒ[ 3:RGB 4:RGBA
- * @param callbackdata ƒR[ƒ‹ƒoƒbƒN—pƒf[ƒ^
- * @param scanlinecallback ƒZ[ƒuƒf[ƒ^’Ê’m—pƒR[ƒ‹ƒoƒbƒN(ƒf[ƒ^‚ª“ü‚Á‚Ä‚¢‚éƒAƒhƒŒƒX‚ð“n‚·)
- * @param tags •Û‘¶‚·‚éƒ^ƒOî•ñ
- * @return 0:¬Œ÷ 1:’†’f -1:ƒGƒ‰[
+ * TLGç”»åƒã®ã‚»ãƒ¼ãƒ–
+ * @param dest æ ¼ç´å…ˆã‚¹ãƒˆãƒªãƒ¼ãƒ 
+ * @param type ç¨®åˆ¥ 0:TLG5 1:TLG6
+ * @parma width ç”»åƒæ¨ªå¹…
+ * @param height ç”»åƒç¸¦å¹…
+ * @param colors è‰²æ•°æŒ‡å®š 1:8bitã‚°ãƒ¬ãƒ¼ 3:RGB 4:RGBA
+ * @param callbackdata ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç”¨ãƒ‡ãƒ¼ã‚¿
+ * @param scanlinecallback ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿é€šçŸ¥ç”¨ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯(ãƒ‡ãƒ¼ã‚¿ãŒå…¥ã£ã¦ã„ã‚‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ¸¡ã™)
+ * @param tags ä¿å­˜ã™ã‚‹ã‚¿ã‚°æƒ…å ±
+ * @return 0:æˆåŠŸ 1:ä¸­æ–­ -1:ã‚¨ãƒ©ãƒ¼
  */
 int
 TVPSaveTLG(tTJSBinaryStream *dest,
@@ -35,7 +35,7 @@ TVPSaveTLG(tTJSBinaryStream *dest,
 		return saveproc(dest, width, height, colors, callback, scanlinecallback);
 	}
 
-	// ƒ^ƒO‚ ‚èTLGƒtƒ@ƒCƒ‹‚Ìˆ—
+	// ã‚¿ã‚°ã‚ã‚ŠTLGãƒ•ã‚¡ã‚¤ãƒ«ã®å‡¦ç†
 	
 	// write TLG0.0 Structured Data Stream header
 	if (!dest->WriteBuffer("TLG0.0\x00sds\x1a\x00", 11)) {
@@ -73,6 +73,7 @@ TVPSaveTLG(tTJSBinaryStream *dest,
 	std::map<std::string,std::string>::const_iterator it = tags->begin();
 	while (it != tags->end()) {
 		ss << it->first.length() << ":" << it->first << "=" << it->second.length() << ":" << it->second << ",";
+		it++;
 	}
 
 	std::string s = ss.str();
